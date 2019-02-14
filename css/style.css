@@ -35,10 +35,12 @@ header {
 	font-weight: 700;
 	padding: 17px 55px;
 	margin-top: 33px;
+	transition: 0.2s;
 }
 .header-button:hover {
 	color: black;
 	background-color: #dddddd;
+	box-shadow: none;
 }
 header small{
 	font-size: 12px;
@@ -147,6 +149,11 @@ margin-top: 0;
 	font-size: 18px;
 	border-radius: 30px;
 	padding: 15px 42px;
+	transition: 0.2s;
+}
+.footer-button:hover {
+background: #fff;
+color: #3a7dfd;
 }
 
 @media (max-width: 1200px) {
