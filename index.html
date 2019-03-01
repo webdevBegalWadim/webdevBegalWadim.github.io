@@ -1,115 +1,706 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	  <!-- Важная техническая информация для браузера -->
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-		<!-- Информация об Авторе и описание проекта -->
-		<meta name="description" content="Разработка Сайтов">
-		<meta name="auyhor" content="Бегаль Вадим">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
 
-		<!-- Иконка, которая будет на вкладке в браузере -->
-		<link rel="icon" href="/favicon.ico">
-		<!-- Заголовок на вкладке в браузере -->
-		<title>Бегаль Вадим Разработка сайтов</title>
+    <title>Бегаль Вадим Сайт номер2</title>
+  </head>
+  <body>
+    <header id="main">
+      <div class="container">
+        <div class="row main-head">
+          <div class="col-6 main-logo">
+          <div class="main-logo-border wow fadeInRight" data-wow-delay="0.4s" data-wow-duration="2s">
+            <p><span>S</span>mart</p>
+          </div>
+          </div>
+          <div class="col-6 main-nav">
+          <a href="#">
+            <span class="line"></span>
+          </a>
+        </div>
 
-		<!-- Подключаем наш файл со стилями, который находится в папке css-->
-		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="css/bootstrap-grid.min.css">
-		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-		<link rel="stylesheet" href="css/animate.css">
-</head>
-<body>
- <!-- Тут будет модержимое будущего сайта -->
- <header>
- 	<div class="container">
- 		<div class="row">
- 			<div class="col-lg-7">
- 				<img class="header-img wow fadeInLeftBig" src="img/main-img.png" alt="Монитор">
- 			</div>
- 			<!-- /.col-7 -->
- 			<div class="col-lg-5">
- 				<p class="header-pretitle wow fadeInRightBig"
- 				data-wow-delay="0.1s">Веб-разработчик</p>
- 				<h1 class="header-title wow fadeInRightBig" data-wow-delay="0.2s">Бегаль Вадим</h1>
- 				<p class="header-subtitle wow fadeInRightBig" data-wow-delay="0.3s">Верстка на HTML/CSS <br>Разработка сайтов под ключ</p>
- 				<div class="header-button-block wow fadeInRightBig" data-wow-delay="0.4s"><a href="https://vk.me/begal_vadim" class="header-button">Связаться</a>
- 				<small>*Это бесплатно</small></div>
- 			</div>
- 			<!-- /.col-5 -->
- 		</div>
- 		<!-- /.row -->
- 	</div>
- 	<!-- /.container -->
- </header>
+        </div>
+        <div class="row main-text">
+          <div class="col-xl-8 offset-xl-2">
+            <h1><span>Smart</span> Agency Landing Page</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, fuga provident. Libero magni quibusdam labore ad iste saepe hic, maxime qui ipsum tempore beatae, volu tomi ptates        doloremque rerum aspernatur dolorum at!</p>
+          </div>  
+        </div>
+        <!-- /.row main-text -->
+        <div class="row">
+          <div class="col-xl-4 offset-xl-0 col-lg-4 offset-lg-4">
+            <div class="main-form wow zoomIn " data-wow-delay="0.4s" data-wow-duration="2s">
+              <p class="main-form-header">
+                <span>Send</span> A Message
+              </p>
+              <form action="#">
+              <input type="text" placeholder="Yor Name">
+              <input type="email" placeholder="Yor Email">
+              <textarea rows="3" placeholder="Yor Message"></textarea>
+            </form>
+            <a href="#popup-2"><button class="main-form-btn" type="submit">Send Message <span>&rarr;</span></button></a>
+            </div>
+            <!-- /.main-form -->
+          </div>
+        </div>
+        
+      </div>
+    </header>
+    <section id="process">
+      <div class="container">
+         <div class="row">
+          <div class="col-xl-8 offset-xl-2 section-header text-center">
+            <h2><span>Working</span> Process</h2>
+            <p>Lorem ipsum dolor sit amet consectet ur adipiscing elit  Vestibulum bibend um vestibulum.</p>
+          </div>  
+        </div>
+        <div class="row">
+          <div class="col-xl-3 col-lg-6">
+            <div class="process-box box-tomi wow fadeInDown" data-wow-delay="0.2s" data-wow-duration="1.5s">
+            <i class="fa fa-magnet"></i>
+            <h4>Koc Koi Tomi</h4>
+            <p>Lorem ipsum is dummy lorem very dumy</p>
+           <a href="#0" id="modal-trigger" data-type="cd-modal-trigger"> <button class="process-btn"><span class="btn-plus"></span>Know More</button></a>
+          </div>
+          </div>
+          <div class="col-xl-3 col-lg-6">
+            <div class="process-box box-koimona wow fadeInDown" data-wow-delay="0.4s" data-wow-duration="2s">
+            <i class="fa fa-bug"></i>
+            <h4>Koimona Set</h4>
+            <p>Lorem ipsum is dummy lorem very dumy</p>
+            <a href="#0" id="modal-trigger" data-type="cd-modal-trigger"> <button class="process-btn"><span class="btn-plus"></span>Know More</button></a>
+          </div>
+          </div>
+          <div class="col-xl-3 col-lg-6">
+            <div class="process-box box-koire wow fadeInDown" data-wow-delay="0.6s" data-wow-duration="2.5s">
+            <i class="fa fa-cogs"></i>
+            <h4>Setting Koire</h4>
+            <p>Lorem ipsum is dummy lorem very dumy</p>
+            <a href="#0" id="modal-trigger" data-type="cd-modal-trigger"> <button class="process-btn"><span class="btn-plus"></span>Know More</button></a>
+          </div>
+          </div>
+          <div class="col-xl-3 col-lg-6">
+            <div class="process-box box-lara wow fadeInDown" data-wow-delay="0.8s" data-wow-duration="3s">
+            <i class="fa fa-camera-retro"></i>
+            <h4>Ko Image Lara</h4>
+            <p>Lorem ipsum is dummy lorem very dumy</p>
+            <a href="#0" id="modal-trigger" data-type="cd-modal-trigger"> <button class="process-btn"><span class="btn-plus"></span>Know More</button></a>
+          </div>
+          </div>
+        </div>
+        <!-- /.row -->
+      </div>
+    </section>
 
- <section class="portfolio">
- 	<div class="container">
- 		<div class="portfolio-block wow fadeIn">
- 		<h2 class="portfolio-title">Портфолио</h2>
- 		<p class="portfolio-subtitle">Мои работы</p>
- 		<div class="row">
- 			<div class="col-md-6">
- 			<div class="portfolio-col-1">
- 					<img src="img/portfolio-img1.png" alt="Гарзпром">
- 				<h3>внутренний университет «Газпром нефти»</h3>
- 				<p class="portfolio-text">У «Газпром нефти» есть внутренний Корпоративный университет для сотрудников. Это настоящий университет, где сотрудники проходят обучение у внутренних тренеров компании или у специально приглашенных лекторов и экспертов....</p>
- 				<a href="#">Смотреть работу</a>
- 			</div>
- 			</div>
- 			<!-- /.col-6 -->
- 			<div class="col-md-6">
- 				<div class="portfolio-col-2">
- 					<img src="img/portfolio-img-1.png" alt="Платежная система МИР">
- 				<h3>Сайт платежной системы «Мир»</h3>
- 				<p class="portfolio-text">Обновленная версия сайта знакомит посетителей с компаниями, уже принимающими карты к оплате, и приглашает всех остальных присоединиться к проекту...</p>
- 				<a href="#">Смотреть работу</a>
- 				</div>
- 			</div>
- 			<!-- /.col-6 -->
- 		</div>
- 	</div>
- 	<!-- /.portfolio-block -->
- 	</div>
- 	<!-- /.container -->
- 	
- </section>
- 
- <footer>
- 	<div class="container">
- 		<div class="row">
- 			<div class="col-md-4">
- 				<h4 class="footer-author">Бегаль Вадим</h4>
- 				<p class="footer-text">Разработка сайтов под ключ</p>
- 			</div>
- 			<div class="col-md-4">
- 				<div class="social-block">
- 					<p>Подпишитесь:</p>
- 					<a class="wow bounceInDown" data-wow-delay="0.1s" href="#"><img  src="img/facebook-logo-button.png" alt="facebook"></a>
- 					<a class="wow bounceInDown" data-wow-delay="0.2s" href="#"><img  src="img/vk-social-logotype.png" alt="vkontakte"></a>
- 					<a class="wow bounceInDown" data-wow-delay="0.3s" href="#"><img  src="img/telegram-symbol.png" alt="telegram"></a>
- 					<a class="wow bounceInDown" data-wow-delay="0.4s" href="#"><img src="img/youtube-symbol.png" alt="youtube"></a>
- 				</div>
- 			</div>
- 			<div class="col-md-4">
- 				<div class="footer-feedback">
- 					<p class="footer-cta">Напишите мне:</p>
- 				<a href="https://vk.me/begal_vadim" class="footer-button">Написать</a>
- 				</div>
- 			</div>
- 		</div>
- 		<!-- /.row -->
- 	</div>
- 	<!-- /.container -->
- </footer>
+    <section id="works">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12 section-header text-center"><h2><span>Featured</span> Works</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Maiores fuga provident Libero.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-4 col-lg-4">
+          <div class="works-box">
+            <img src="img/works/1.jpg" alt="Work#1">
+            <div class="signature">
+              <div class="sign">
+                <p>Work#1</p>
+               <button type="button" data-toggle="modal" data-target="#modal-1"">Visit Gallery</button>
+              </div>
+            </div>
+          </div>
+          <!-- /.works-box -->
+        </div>
+        <!-- /.col-xl-4 -->
+        <div class="col-xl-4 col-lg-4">
+           <div class="works-box">
+            <img src="img/works/2.jpg" alt="Work#2">
+            <div class="signature">
+              <div class="sign">
+                <p>Work#2</p>
+                <button type="button" data-toggle="modal" data-target="#modal-2"">Visit Gallery</button>
+              </div>
+            </div>
+          </div>
+          <!-- /.works-box -->
+        </div>
+        <!-- /.col-xl-4 -->
+        <div class="col-xl-4 col-lg-4">
+           <div class="works-box">
+            <img src="img/works/3.jpg" alt="Work#">
+            <div class="signature">
+              <div class="sign">
+                <p>Work#3</p>
+                <button type="button" data-toggle="modal" data-target="#modal-3"">Visit Gallery</button>
+              </div>
+            </div>
+          </div>
+          <!-- /.works-box -->
+        </div>
+        <!-- /.col-xl-4 -->
+      </div> <div class="row">
+          <div class="col-xl-4 col-lg-4">
+          <div class="works-box">
+            <img src="img/works/4.jpg" alt="Work#4">
+            <div class="signature">
+              <div class="sign">
+                <p>Work#4</p>
+                <button type="button" data-toggle="modal" data-target="#modal-4"">Visit Gallery</button>
+              </div>
+            </div>
+          </div>
+          <!-- /.works-box -->
+        </div>
+        <!-- /.col-xl-4 -->
+        <div class="col-xl-4 col-lg-4">
+           <div class="works-box">
+            <img src="img/works/5.jpg" alt="Work#2">
+            <div class="signature">
+              <div class="sign">
+                <p>Work#5</p>
+                <button type="button" data-toggle="modal" data-target="#modal-5"">Visit Gallery</button>
+              </div>
+            </div>
+          </div>
+          <!-- /.works-box -->
+        </div>
+        <!-- /.col-xl-4 -->
+        <div class="col-xl-4 col-lg-4">
+           <div class="works-box">
+            <img src="img/works/6.jpg" alt="Work6">
+            <div class="signature">
+              <div class="sign">
+                <p>Work#6</p>
+                <button type="button" data-toggle="modal" data-target="#modal-6"">Visit Gallery</button>
+              </div>
+            </div>
+          </div>
+          <!-- /.works-box -->
+        </div>
+        <!-- /.col-xl-4 -->
+      </div> <div class="row">
+          <div class="col-xl-4 col-lg-4">
+          <div class="works-box">
+            <img src="img/works/7.jpg" alt="Work#1">
+            <div class="signature">
+              <div class="sign">
+                <p>Work#7</p>
+                <button type="button" data-toggle="modal" data-target="#modal-7"">Visit Gallery</button>
+              </div>
+            </div>
+          </div>
+          <!-- /.works-box -->
+        </div>
+        <!-- /.col-xl-4 -->
+        <div class="col-xl-4 col-lg-4">
+           <div class="works-box">
+            <img src="img/works/8.jpg" alt="Work#2">
+            <div class="signature">
+              <div class="sign">
+                <p>Work#8</p>
+                <button type="button" data-toggle="modal" data-target="#modal-8"">Visit Gallery</button>
+              </div>
+            </div>
+          </div>
+          <!-- /.works-box -->
+        </div>
+        <!-- /.col-xl-4 -->
+        <div class="col-xl-4 col-lg-4">
+           <div class="works-box">
+            <img src="img/works/9.jpg" alt="Work#">
+            <div class="signature">
+              <div class="sign">
+                <p>Work#9</p>
+                <button type="button" data-toggle="modal" data-target="#modal-9"">Visit Gallery</button>
+              </div>
+            </div>
+          </div>
+          <!-- /.works-box -->
+        </div>
+        <!-- /.col-xl-4 -->
+      </div>
+    </section>
 
- <script src="JS/wow.min.js"></script>
+    <section id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12 section-header text-center">
+            <h2><span>Services</span> We Provide</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Maiores fuga provident Libero.</p>
+          </div>
+          <!-- /.col-xl-12 section-header text-centr -->
+        </div>
+        <!-- /.row -->
+        <div class="row">
+          <div class="col-xl-2">
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#app"><img src="img/services/4.png" alt=""></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#web"><img src="img/services/2.png" alt=""></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#global"><img src="img/services/3.png" alt=""></a>
+              </li>
+            </ul>
+        </div>
+              
+          <div class="col-xl-10">
+            <div class="tab-content" class="services-info">
+              <div class="tab-pane active container" id="app">
+               <div class="row">
+                  <div class="col-xl-8">
+                 <h4>Modern App Design</h4>
+                 <span class="services-line"></span>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus earum totam ad sint error porro. Consectetur, sunt, aperiam. Magni rem optio distinctio illum consequuntur delectus nulla illo aperiam itaque cumque. <br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel officia vitae eveniet quam rem unde facilis.</p>
+                 <button class="services-btn"><span class="btn-plus"></span> Know More</button>
+                  </div>
+                  <div class="col-xl-4">
+                 <img class="img-responsive" src="img/services/apple.png" alt="">
+                </div>
+               </div>
+               <!-- /.row -->
+            </div>
+              <div class="tab-pane container" id="web">
+                <div class="row">
+                  <div class="col-xl-8">
+                  <h4>Modern Web Design</h4>
+                  <span class="services-line"></span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus earum totam ad sint error porro. Consectetur, sunt, aperiam. Magni rem optio distinctio illum consequuntur delectus nulla illo aperiam itaque cumque. <br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel officia vitae eveniet quam rem unde facilis.</p>
+                  <button class="services-btn"><span class="btn-plus"></span> Know More</button>
+                </div>
+                <div class="col-xl-4">
+                  <img class="img-responsive" src="img/services/iph.png" width="100%" height="100%" alt="">
+                </div>
+              </div>
+              <!-- /.row -->
+              </div>
+              <div class="tab-pane container" id="global">
+                <div class="row">
+                  <div class="col-xl-8">
+                  <h4>Modern Global Design</h4>
+                  <span class="services-line"></span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus earum totam ad sint error porro. Consectetur, sunt, aperiam. Magni rem optio distinctio illum consequuntur delectus nulla illo aperiam itaque cumque.</p>
+                  <button class="services-btn"><span class="btn-plus"></span> Know More</button>
+                </div>
+                <div class="col-xl-4">
+                  <img src="img/services/play.png" width="100%" height="100%" alt="">
+                </div>
+              </div>
+              <!-- /.row -->
+              </div>
+            </div>
+          </div>
 
- <script>
- 	new WOW().init();
+        </div>
+          </div>
+   </section>
+    <!-- /#services -->
+    <section id="acordion">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12 section-header text-center">
+            <h2><span>Frequently</span> Asked Question</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Maiores fuga provident Libero.</p>
+          </div>
+          <!-- /.col-xl-12 section-header text-centr -->
+          <div class="row">
+            <div class="col-xl-12">
+              <div id="accordion">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                       Lorem ipsum dolor sit amet, consectetur.
+                      </button>
+                    </h5>
+                  </div>
+
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus veniam voluptates placeat ipsa excepturi officiis, vitae maxime recusandae impedit nam quis nostrum libero, doloremque explicabo corrupti dicta aliquam numquam ratione magnam illum. Libero beatae consectetur rem numquam!
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                       Lorem ipsum dolor sit.
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque culpa omnis, quasi, unde ex voluptas! Assumenda ullam quod inventore, libero, nulla atque optio voluptatum necessitatibus a ex delectus! Ratione dolores laboriosam provident, neque laudantium, error, deleniti omnis culpa at veritatis fuga reprehenderit optio itaque voluptatem.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                       Group Item #3
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat voluptas autem expedita aliquam voluptatem, veritatis itaque culpa.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /.col-xl-12 -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.row -->
+    </section> 
+
+    <section id="feedback">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12 section-header text-center">
+            <h2><span>Clients</span> Said</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, nesciunt?</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-12">
+            <div class="feedback-slider">
+              <div class="feedback-slider-item text-center">
+                <div class="feedback-box">
+                  <img class="center-block" src="img/feedback/feedback1.jpg" alt="Kita Say">
+                 <div class="feedback-shadow">
+                    <p>“This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again”</p>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <p><span>Kita Say,</span> HK Director</p>
+                 </div>
+                </div>
+              </div>
+              <div class="feedback-slider-item text-center">
+                <div class="feedback-box">
+                  <img class="center-block" src="img/feedback/feedback2.jpg" alt="Kita Say">
+                  <div class="feedback-shadow">
+                    <p>“This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again”</p>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <p><span>Kita Say,</span> HK Director</p>
+                  </div>
+                </div>
+              </div>
+              <div class="feedback-slider-item text-center">
+                <div class="feedback-box">
+                  <img class="center-block" src="img/feedback/feedback1.jpg" alt="Kita Say">
+                  <div class="feedback-shadow">
+                    <p>“This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again”</p>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <p><span>Kita Say,</span> HK Director</p>
+                  </div>
+                </div>
+              </div>
+              <div class="feedback-slider-item text-center">
+                <div class="feedback-box">
+                  <img class="center-block" src="img/feedback/feedback2.jpg" alt="Kita Say">
+                 <div class="feedback-shadow">
+                   <p>“This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again”</p>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <p><span>Kita Say,</span> HK Director</p>
+                 </div>
+                </div>
+              </div>
+              <div class="feedback-slider-item text-center">
+                <div class="feedback-box">
+                  <img class="center-block" src="img/feedback/feedback1.jpg" alt="Kita Say">
+                  <div class="feedback-shadow">
+                    <p>“This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again”</p>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <p><span>Kita Say,</span> HK Director</p>
+                  </div>
+                </div>
+              </div>
+              <div class="feedback-slider-item text-center">
+                <div class="feedback-box">
+                  <img class="center-block" src="img/feedback/feedback2.jpg" alt="Kita Say">
+                 <div class="feedback-shadow">
+                    <p>“This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again”</p>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <p><span>Kita Say,</span> HK Director</p>
+                 </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.col-xl-12 -->
+        </div>
+        <!-- /.row -->
+      </div>
+    </section>
+   
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12 text-center">
+            <a href="#popup-1"><button class="footer-btn">Contact Us</button></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="popup-1" class="popup-overlay">
+      <div class="popup">
+        <a href="#close" class="popup-close">&times;</a>
+        <p><span>&#9742;</span> +7-953-417-90-65</p>
+    </div>
+  </div>
+
+    <div id="popup-2" class="popup-overlay">
+      <div class="popup">
+        <a href="#close" class="popup-close">&times;</a>
+        <form action="#">
+          <input type="text" placeholder="Name">
+        </form>
+        <button class="popup-btn">Send</button>
+      </div>
+    </div>
+
+      <!-- Модальное окно -->
+      <div class="modal fade" id="modal-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Work#1</h5>
+          </div>
+                <div class="modal-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quaerat itaque, adipisci quod iste nostrum tenetur, vitae ducimus velit. Fugiat suscipit, deserunt voluptas expedita consectetur ex fuga a, maxime repellendus dolores totam blanditiis hic natus soluta, quibusdam! Eos voluptatem, ex.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="modal fade" id="modal-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Work#2</h5>
+          </div>
+                <div class="modal-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quaerat itaque, adipisci quod iste nostrum tenetur, vitae ducimus velit. Fugiat suscipit, deserunt voluptas expedita consectetur ex fuga a, maxime repellendus dolores totam blanditiis hic natus soluta, quibusdam! Eos voluptatem, ex.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="modal fade" id="modal-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Work#3</h5>
+          </div>
+                <div class="modal-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quaerat itaque, adipisci quod iste nostrum tenetur, vitae ducimus velit. Fugiat suscipit, deserunt voluptas expedita consectetur ex fuga a, maxime repellendus dolores totam blanditiis hic natus soluta, quibusdam! Eos voluptatem, ex.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="modal fade" id="modal-4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Work#4</h5>
+          </div>
+                <div class="modal-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quaerat itaque, adipisci quod iste nostrum tenetur, vitae ducimus velit. Fugiat suscipit, deserunt voluptas expedita consectetur ex fuga a, maxime repellendus dolores totam blanditiis hic natus soluta, quibusdam! Eos voluptatem, ex.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="modal fade" id="modal-5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Work#5</h5>
+          </div>
+                <div class="modal-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quaerat itaque, adipisci quod iste nostrum tenetur, vitae ducimus velit. Fugiat suscipit, deserunt voluptas expedita consectetur ex fuga a, maxime repellendus dolores totam blanditiis hic natus soluta, quibusdam! Eos voluptatem, ex.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="modal fade" id="modal-6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Work#6</h5>
+          </div>
+                <div class="modal-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quaerat itaque, adipisci quod iste nostrum tenetur, vitae ducimus velit. Fugiat suscipit, deserunt voluptas expedita consectetur ex fuga a, maxime repellendus dolores totam blanditiis hic natus soluta, quibusdam! Eos voluptatem, ex.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+          </div>
+      </div>
+      <div class="modal fade" id="modal-7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Work#7</h5>
+          </div>
+                <div class="modal-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quaerat itaque, adipisci quod iste nostrum tenetur, vitae ducimus velit. Fugiat suscipit, deserunt voluptas expedita consectetur ex fuga a, maxime repellendus dolores totam blanditiis hic natus soluta, quibusdam! Eos voluptatem, ex.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+          </div>
+      </div>
+      <div class="modal fade" id="modal-8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Work#8</h5>
+          </div>
+                <div class="modal-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quaerat itaque, adipisci quod iste nostrum tenetur, vitae ducimus velit. Fugiat suscipit, deserunt voluptas expedita consectetur ex fuga a, maxime repellendus dolores totam blanditiis hic natus soluta, quibusdam! Eos voluptatem, ex.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+          </div>
+      </div>
+      <div class="modal fade" id="modal-9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Work#9</h5>
+          </div>
+                <div class="modal-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quaerat itaque, adipisci quod iste nostrum tenetur, vitae ducimus velit. Fugiat suscipit, deserunt voluptas expedita consectetur ex fuga a, maxime repellendus dolores totam blanditiis hic natus soluta, quibusdam! Eos voluptatem, ex.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+          </div>
+      </div>
+
+   <div class="cd-modal" data-modal="modal-trigger">
+    <div class="cd-svg-bg" 
+    data-step1="M-59.9,540.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L864.8-41c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L-59.5,540.6 C-59.6,540.7-59.8,540.7-59.9,540.5z" 
+    data-step2="M33.8,690l-188.2-300.3c-0.1-0.1,0-0.3,0.1-0.3l925.4-579.8c0.1-0.1,0.3,0,0.3,0.1L959.6,110c0.1,0.1,0,0.3-0.1,0.3 L34.1,690.1C34,690.2,33.9,690.1,33.8,690z" 
+    data-step3="M-465.1,287.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L459.5-294c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-464.9,287.7-465,287.7-465.1,287.5z" 
+    data-step4="M-329.3,504.3l-272.5-435c-0.1-0.1,0-0.3,0.1-0.3l925.4-579.8c0.1-0.1,0.3,0,0.3,0.1l272.5,435c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-329,504.5-329.2,504.5-329.3,504.3z" 
+    data-step5="M341.1,797.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L1265.8,216c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L341.5,797.6 C341.4,797.7,341.2,797.7,341.1,797.5z" 
+    data-step6="M476.4,1013.4L205,580.3c-0.1-0.1,0-0.3,0.1-0.3L1130.5,0.2c0.1-0.1,0.3,0,0.3,0.1l271.4,433.1c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C476.6,1013.6,476.5,1013.5,476.4,1013.4z">
+      <svg height="100%" width="100%" preserveAspectRatio="none" viewBox="0 0 800 500">
+        <title>SVG Modal background</title>
+        <path id="cd-changing-path-1" d="M-59.9,540.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L864.8-41c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L-59.5,540.6 C-59.6,540.7-59.8,540.7-59.9,540.5z"/>
+        <path id="cd-changing-path-2" d="M-465.1,287.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L459.5-294c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-464.9,287.7-465,287.7-465.1,287.5z"/>
+        <path id="cd-changing-path-3" d="M341.1,797.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L1265.8,216c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L341.5,797.6 C341.4,797.7,341.2,797.7,341.1,797.5z"/>
+      </svg>
+    </div>
+
+    <div class="cd-modal-content">
+      <p>
+        Koc Koi Tomi
+          Lorem ipsum is dummy lorem very dumy
+      </p>
+    </div> <!-- cd-modal-content -->
+
+    <a href="#0" class="modal-close">Close</a>
+  </div> <!-- cd-modal -->
+  <div class="cd-cover-layer"></div> <!-- .cd-cover-layer -->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+ <script src="js/wow.min.js"></script>
+  <script>
+  new WOW().init();
  </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="slick/slick.min.js"> </script>
+    <script src="js/snap.svg-min.js"></script>
+    <script src="js/main.js"></script> <!-- Resource jQuery -->
+    
+    <script>
+      $(document).ready(function(){
+        $('.feedback-slider').slick({
+          infinite: true,
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          arrows: true,
+          prevArrow: '<i class="fa feedback-slider-arrows arrow-left fa-chevron-left"></i>',
+          nextArrow: '<i class="fa feedback-slider-arrows arrow-right fa-chevron-right"></i>',
+          dots: true
 
-</body>
+        });
+     });
+  
+    </script>
+
+  </body>
 </html>
