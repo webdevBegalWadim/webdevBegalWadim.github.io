@@ -19,12 +19,12 @@
     <header id="main">
       <div class="container">
         <div class="row main-head">
-          <div class="col-6 main-logo">
+          <div class="col-lg-6 main-logo">
           <div class="main-logo-border wow fadeInRight" data-wow-delay="0.4s" data-wow-duration="2s">
             <p><span>S</span>mart</p>
           </div>
           </div>
-          <div class="col-6 main-nav">
+          <div class="col-lg-6 main-nav">
           <a href="#">
             <span class="line"></span>
           </a>
@@ -44,12 +44,12 @@
               <p class="main-form-header">
                 <span>Send</span> A Message
               </p>
-              <form action="#">
-              <input type="text" placeholder="Yor Name">
-              <input type="email" placeholder="Yor Email">
-              <textarea rows="3" placeholder="Yor Message"></textarea>
+              <form action="mail.php" method="POST">
+              <input type="text" name="user_name" placeholder="Yor Name">
+              <input type="email" name="email" placeholder="Yor Email">
+              <textarea rows="3" name="user_messege" placeholder="Yor Message"></textarea>
             </form>
-            <a href="#popup-2"><button class="main-form-btn" type="submit">Send Message <span>&rarr;</span></button></a>
+            <button class="main-form-btn" type="submit">Send Message <span>&rarr;</span></button>
             </div>
             <!-- /.main-form -->
           </div>
@@ -478,7 +478,7 @@
     <footer id="footer">
       <div class="container">
         <div class="row">
-          <div class="col-xl-12 text-center">
+          <div class="col-12 text-center">
             <a href="#popup-1"><button class="footer-btn">Contact Us</button></a>
           </div>
         </div>
@@ -695,7 +695,35 @@
           arrows: true,
           prevArrow: '<i class="fa feedback-slider-arrows arrow-left fa-chevron-left"></i>',
           nextArrow: '<i class="fa feedback-slider-arrows arrow-right fa-chevron-right"></i>',
-          dots: true
+          dots: true,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ]
 
         });
      });
