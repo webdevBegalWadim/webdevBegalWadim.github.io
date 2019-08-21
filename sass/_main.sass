@@ -1,0 +1,65 @@
+.main
+	position: relative 
+	padding-top: 60px
+	padding-bottom: 65px
+	background-color: #373737
+	background-image: url(../img/main-bg.jpg)
+	background-position: center 
+	background-size: cover 
+	background-repeat: no-repeat 
+	color: $text-color-light 
+	z-index: 1
+	&-img 
+		position: relative
+		z-index: 1
+		margin-right: 30px
+		&::before
+		 content: ''
+		 position: absolute
+		 width: 350px
+		 height: 350px
+		 left: 50%
+		 margin-left: -150px
+		 border: 1px solid #858a88
+		 border-radius: 50%
+		 z-index: -2
+	&-text
+	 &__title
+	  font-size: 41px
+	  font-weight: 400
+	 &__subtitle
+	 	margin-bottom: 24px
+	 	font-size: 28px
+	 	font-weight: 300
+	 &__form 
+	 	padding: 30px 27px
+	 	background-color: rgba( 255, 255, 255, 0.2)
+	 	border-radius: 2px
+.form
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	&-title
+		padding-right: 87px
+		font-size: 20px
+		font-weight: 300
+		line-height: 30px
+		&__important
+			font-weight: 700
+			text-transform: uppercase
+			display: block
+	&__input
+		margin-right: 10px
+		padding: 20px
+		font-size: 14px
+		border-radius: 3px
+		border: none
+		vertical-align: middle
+		width: 100%
+		max-width: 365px
+	&-small
+		font-size: 14px
+		font-weight: 300
+		

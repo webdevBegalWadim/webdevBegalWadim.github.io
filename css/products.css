@@ -1,0 +1,13 @@
+.products-block {
+  text-align: center;
+  margin-bottom: 35px; }
+  .products-block img {
+    min-height: 314px; }
+  .products-block__title {
+    margin-top: 19px;
+    margin-bottom: 28px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 19.99px; }
+  .products-block__button {
+    margin-right: 12px; }

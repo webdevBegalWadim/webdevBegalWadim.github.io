@@ -1,734 +1,491 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
   <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
-    <link rel="stylesheet" href="slick/slick.css">
-    <link rel="stylesheet" href="slick/slick-theme.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/style.css">
-
-    <title>Бегаль Вадим Сайт номер2</title>
+	<link rel="stylesheet" href="css/style.css">
+    <title>Добрый Картон</title>
   </head>
   <body>
-    <header id="main">
-      <div class="container">
-        <div class="row main-head">
-          <div class="col-lg-6 main-logo">
-          <div class="main-logo-border wow fadeInRight" data-wow-delay="0.4s" data-wow-duration="2s">
-            <p><span>S</span>mart</p>
-          </div>
-          </div>
-          <div class="col-lg-6 main-nav">
-          <a href="#">
-            <span class="line"></span>
-          </a>
-        </div>
-
-        </div>
-        <div class="row main-text">
-          <div class="col-xl-8 offset-xl-2">
-            <h1><span>Smart</span> Agency Landing Page</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, fuga provident. Libero magni quibusdam labore ad iste saepe hic, maxime qui ipsum tempore beatae, volu tomi ptates        doloremque rerum aspernatur dolorum at!</p>
-          </div>  
-        </div>
-        <!-- /.row main-text -->
-        <div class="row">
-          <div class="col-xl-4 offset-xl-0 col-lg-4 offset-lg-4">
-            <div class="main-form wow zoomIn " data-wow-delay="0.4s" data-wow-duration="2s">
-              <p class="main-form-header">
-                <span>Send</span> A Message
-              </p>
-              <form action="mail.php" method="POST">
-              <input type="text" name="user_name" placeholder="Yor Name">
-              <input type="email" name="email" placeholder="Yor Email">
-              <textarea rows="3" name="user_messege" placeholder="Yor Message"></textarea>
-            </form>
-            <button class="main-form-btn" type="submit">Send Message <span>&rarr;</span></button>
+    <nav class="header-nav">
+        <div class="container">
+             <div class="header-nav-menu" id="menu">
+                <ul class="header-nav-menu__list">
+                    <li><a href="#main">О компании</a></li>
+                    <li><a href="#features">преимущества</a></li>
+                    <li><a href="#production">производство</a></li>
+                    <li> <a href="#">склад</a></li>
+                    <li><a href="#products">Продукция</a></li>
+                    <li><a href="#clients">наши клиенты</a>  </li>
+                    <li><a href="#">Сертификаты</a> </li>
+                    <li> <a href="#reviews">Отзывы</a> </li>
+                    <li><a href="#">контакты</a></li>
+                </ul>
             </div>
-            <!-- /.main-form -->
-          </div>
         </div>
-        
-      </div>
+    </nav>
+    <header class="header">
+    	<div class="container">
+    		<div class="row align-items-center">
+    			<div class="col-3 col-md-4">
+    				<div class="header__logo">
+    					
+    				</div>
+    				<!-- /.header__logo -->
+    			</div>
+    			<!-- /.col-4 -->
+    			<div class="col-9 col-md-8">
+    				<div class="header-contacts">
+    					<div class="header-contacts__phones">
+                            <div class="header-contacts__phone">
+                                    8 (347) 271-54-28     
+                            </div>
+                            <!-- /.header-contacts__phone -->
+                            <div class="header-contacts__phone">
+                                8 (937) 363-30-00
+                            </div>
+                            <!-- /.header-contacts__phone -->               
+                        </div>
+    					<button class="header-contacts__button button">
+    						<img src="img/bottonImg.png" alt="Кнопка">
+    						<span class="hidden-mobile">Заказать звонок</span>
+    					</button>
+    					<!-- /.header-contacts__button -->
+    				</div>
+    				<!-- /.header__contacts -->
+    			</div>
+    			<!-- /.col-8 -->
+    		</div>
+    		<!-- /.row -->
+    	</div>
+    	<!-- /.container -->
     </header>
-    <section id="process">
-      <div class="container">
-         <div class="row">
-          <div class="col-xl-8 offset-xl-2 section-header text-center">
-            <h2><span>Working</span> Process</h2>
-            <p>Lorem ipsum dolor sit amet consectet ur adipiscing elit  Vestibulum bibend um vestibulum.</p>
-          </div>  
-        </div>
-        <div class="row">
-          <div class="col-xl-3 col-lg-6">
-            <div class="process-box box-tomi wow fadeInDown" data-wow-delay="0.2s" data-wow-duration="1.5s">
-            <i class="fa fa-magnet"></i>
-            <h4>Koc Koi Tomi</h4>
-            <p>Lorem ipsum is dummy lorem very dumy</p>
-           <a href="#0" id="modal-trigger" data-type="cd-modal-trigger"> <button class="process-btn"><span class="btn-plus"></span>Know More</button></a>
-          </div>
-          </div>
-          <div class="col-xl-3 col-lg-6">
-            <div class="process-box box-koimona wow fadeInDown" data-wow-delay="0.4s" data-wow-duration="2s">
-            <i class="fa fa-bug"></i>
-            <h4>Koimona Set</h4>
-            <p>Lorem ipsum is dummy lorem very dumy</p>
-            <a href="#0" id="modal-trigger" data-type="cd-modal-trigger"> <button class="process-btn"><span class="btn-plus"></span>Know More</button></a>
-          </div>
-          </div>
-          <div class="col-xl-3 col-lg-6">
-            <div class="process-box box-koire wow fadeInDown" data-wow-delay="0.6s" data-wow-duration="2.5s">
-            <i class="fa fa-cogs"></i>
-            <h4>Setting Koire</h4>
-            <p>Lorem ipsum is dummy lorem very dumy</p>
-            <a href="#0" id="modal-trigger" data-type="cd-modal-trigger"> <button class="process-btn"><span class="btn-plus"></span>Know More</button></a>
-          </div>
-          </div>
-          <div class="col-xl-3 col-lg-6">
-            <div class="process-box box-lara wow fadeInDown" data-wow-delay="0.8s" data-wow-duration="3s">
-            <i class="fa fa-camera-retro"></i>
-            <h4>Ko Image Lara</h4>
-            <p>Lorem ipsum is dummy lorem very dumy</p>
-            <a href="#0" id="modal-trigger" data-type="cd-modal-trigger"> <button class="process-btn"><span class="btn-plus"></span>Know More</button></a>
-          </div>
-          </div>
-        </div>
-        <!-- /.row -->
-      </div>
+    <!-- /.header -->
+    <section class="main dark-bg" id="main">
+    	<div class="container">
+    		<div class="row align-items-center">
+    			<div class="col-12 col-md-5">
+    				<div class="main-img animate hidden-mobile">
+    					<img src="img/main-img.png" alt="Коробки">
+    				</div>
+    				<!-- /.main-img -->
+    			</div>
+    			<!-- /.col-5 -->
+    			<div class="col-12 col-md-7">
+    				<div class="main-text">
+    					<h1 class="main-text__title">
+    						Производство упаковки из гофрокартона
+    					</h1>
+    					<!-- /.main-text__title -->
+    					<div class="main-text__subtitle">
+    						с доставкой по всей России
+    					</div>
+    					<!-- /.main-text__subtitle -->
+    					<div class="main-text__form">
+    						<div class="form-title">
+    							Получите индивидуальное предложение
+											на производство и поставку гофропродукции
+										<span class="form-title__important">
+    							Образцы упаковки бесплатно!
+    						</span>
+    						<!-- /.form-title__important -->
+    						</div>
+    						<!-- /.form-title -->
+    						<form action="#" class="form">
+    							<input class="form__input" type="tel" placeholder="Введите номер телефона">
+    							<button type="submit" class="button button_big">Оставить заявку!</button>
+    						</form>
+    						<!-- /.form -->
+    						<small class="form-small">*Минимальный заказ 500шт</small>
+    					</div>
+    					<!-- /.main-text__form -->
+    				</div>
+    				<!-- /.main-text -->
+    			</div>
+    			<!-- /.col-7 -->
+    		</div>
+    		<!-- /.row -->
+    	</div>
+    	<!-- /.container -->
     </section>
-
-    <section id="works">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-12 section-header text-center"><h2><span>Featured</span> Works</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Maiores fuga provident Libero.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xl-4 col-lg-4">
-          <div class="works-box">
-            <img src="img/works/1.jpg" alt="Work#1">
-            <div class="signature">
-              <div class="sign">
-                <p>Work#1</p>
-               <button type="button" data-toggle="modal" data-target="#modal-1"">Visit Gallery</button>
-              </div>
-            </div>
-          </div>
-          <!-- /.works-box -->
-        </div>
-        <!-- /.col-xl-4 -->
-        <div class="col-xl-4 col-lg-4">
-           <div class="works-box">
-            <img src="img/works/2.jpg" alt="Work#2">
-            <div class="signature">
-              <div class="sign">
-                <p>Work#2</p>
-                <button type="button" data-toggle="modal" data-target="#modal-2"">Visit Gallery</button>
-              </div>
-            </div>
-          </div>
-          <!-- /.works-box -->
-        </div>
-        <!-- /.col-xl-4 -->
-        <div class="col-xl-4 col-lg-4">
-           <div class="works-box">
-            <img src="img/works/3.jpg" alt="Work#">
-            <div class="signature">
-              <div class="sign">
-                <p>Work#3</p>
-                <button type="button" data-toggle="modal" data-target="#modal-3"">Visit Gallery</button>
-              </div>
-            </div>
-          </div>
-          <!-- /.works-box -->
-        </div>
-        <!-- /.col-xl-4 -->
-      </div> <div class="row">
-          <div class="col-xl-4 col-lg-4">
-          <div class="works-box">
-            <img src="img/works/4.jpg" alt="Work#4">
-            <div class="signature">
-              <div class="sign">
-                <p>Work#4</p>
-                <button type="button" data-toggle="modal" data-target="#modal-4"">Visit Gallery</button>
-              </div>
-            </div>
-          </div>
-          <!-- /.works-box -->
-        </div>
-        <!-- /.col-xl-4 -->
-        <div class="col-xl-4 col-lg-4">
-           <div class="works-box">
-            <img src="img/works/5.jpg" alt="Work#2">
-            <div class="signature">
-              <div class="sign">
-                <p>Work#5</p>
-                <button type="button" data-toggle="modal" data-target="#modal-5"">Visit Gallery</button>
-              </div>
-            </div>
-          </div>
-          <!-- /.works-box -->
-        </div>
-        <!-- /.col-xl-4 -->
-        <div class="col-xl-4 col-lg-4">
-           <div class="works-box">
-            <img src="img/works/6.jpg" alt="Work6">
-            <div class="signature">
-              <div class="sign">
-                <p>Work#6</p>
-                <button type="button" data-toggle="modal" data-target="#modal-6"">Visit Gallery</button>
-              </div>
-            </div>
-          </div>
-          <!-- /.works-box -->
-        </div>
-        <!-- /.col-xl-4 -->
-      </div> <div class="row">
-          <div class="col-xl-4 col-lg-4">
-          <div class="works-box">
-            <img src="img/works/7.jpg" alt="Work#1">
-            <div class="signature">
-              <div class="sign">
-                <p>Work#7</p>
-                <button type="button" data-toggle="modal" data-target="#modal-7"">Visit Gallery</button>
-              </div>
-            </div>
-          </div>
-          <!-- /.works-box -->
-        </div>
-        <!-- /.col-xl-4 -->
-        <div class="col-xl-4 col-lg-4">
-           <div class="works-box">
-            <img src="img/works/8.jpg" alt="Work#2">
-            <div class="signature">
-              <div class="sign">
-                <p>Work#8</p>
-                <button type="button" data-toggle="modal" data-target="#modal-8"">Visit Gallery</button>
-              </div>
-            </div>
-          </div>
-          <!-- /.works-box -->
-        </div>
-        <!-- /.col-xl-4 -->
-        <div class="col-xl-4 col-lg-4">
-           <div class="works-box">
-            <img src="img/works/9.jpg" alt="Work#">
-            <div class="signature">
-              <div class="sign">
-                <p>Work#9</p>
-                <button type="button" data-toggle="modal" data-target="#modal-9"">Visit Gallery</button>
-              </div>
-            </div>
-          </div>
-          <!-- /.works-box -->
-        </div>
-        <!-- /.col-xl-4 -->
-      </div>
-    </section>
-
-    <section id="services">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-12 section-header text-center">
-            <h2><span>Services</span> We Provide</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Maiores fuga provident Libero.</p>
-          </div>
-          <!-- /.col-xl-12 section-header text-centr -->
-        </div>
-        <!-- /.row -->
-        <div class="row">
-          <div class="col-xl-2">
-            <ul class="nav nav-tabs">
-              <li class="nav-item">
-                <a class="nav-link active" data-toggle="tab" href="#app"><img src="img/services/4.png" alt=""></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#web"><img src="img/services/2.png" alt=""></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#global"><img src="img/services/3.png" alt=""></a>
-              </li>
-            </ul>
-        </div>
+    <!-- /.main -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="numbers">
+                
+                <div class="numbers-block">
+                    <div class="numbers-block__title">5 лет</div>
+                    <!-- /.number-block__title -->
+                    <div class="numbers-block__text">На рынке изделий из гофрокартона</div>
+                    <!-- /.number-block__text -->
+                </div>
+                <!-- /.numbers-block -->
+               
+                <div class="numbers-block">
+                    <div class="numbers-block__title">до 5 000 000 м<sup>2</sup></div>
+                    <!-- /.number-block__title -->
+                    <div class="numbers-block__text">Ежемесячный объем производства гофрокартона</div>
+                    <!-- /.number-block__text -->
+                </div>
+                <!-- /.numbers-block -->
               
-          <div class="col-xl-10">
-            <div class="tab-content" class="services-info">
-              <div class="tab-pane active container" id="app">
-               <div class="row">
-                  <div class="col-xl-8">
-                 <h4>Modern App Design</h4>
-                 <span class="services-line"></span>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus earum totam ad sint error porro. Consectetur, sunt, aperiam. Magni rem optio distinctio illum consequuntur delectus nulla illo aperiam itaque cumque. <br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel officia vitae eveniet quam rem unde facilis.</p>
-                 <button class="services-btn"><span class="btn-plus"></span> Know More</button>
-                  </div>
-                  <div class="col-xl-4">
-                 <img class="img-responsive" src="img/services/apple.png" alt="">
+                <div class="numbers-block">
+                    <div class="numbers-block__title">4 000 м<sup>2</sup></div>
+                    <!-- /.number-block__title -->
+                    <div class="numbers-block__text">Площадь склада</div>
+                    <!-- /.number-block__text -->
                 </div>
-               </div>
-               <!-- /.row -->
+                <!-- /.numbers-block -->
+           
             </div>
-              <div class="tab-pane container" id="web">
-                <div class="row">
-                  <div class="col-xl-8">
-                  <h4>Modern Web Design</h4>
-                  <span class="services-line"></span>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus earum totam ad sint error porro. Consectetur, sunt, aperiam. Magni rem optio distinctio illum consequuntur delectus nulla illo aperiam itaque cumque. <br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel officia vitae eveniet quam rem unde facilis.</p>
-                  <button class="services-btn"><span class="btn-plus"></span> Know More</button>
-                </div>
-                <div class="col-xl-4">
-                  <img class="img-responsive" src="img/services/iph.png" width="100%" height="100%" alt="">
-                </div>
-              </div>
-              <!-- /.row -->
-              </div>
-              <div class="tab-pane container" id="global">
-                <div class="row">
-                  <div class="col-xl-8">
-                  <h4>Modern Global Design</h4>
-                  <span class="services-line"></span>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus earum totam ad sint error porro. Consectetur, sunt, aperiam. Magni rem optio distinctio illum consequuntur delectus nulla illo aperiam itaque cumque.</p>
-                  <button class="services-btn"><span class="btn-plus"></span> Know More</button>
-                </div>
-                <div class="col-xl-4">
-                  <img src="img/services/play.png" width="100%" height="100%" alt="">
-                </div>
-              </div>
-              <!-- /.row -->
-              </div>
-            </div>
-          </div>
-
-        </div>
-          </div>
-   </section>
-    <!-- /#services -->
-    <section id="acordion">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-12 section-header text-center">
-            <h2><span>Frequently</span> Asked Question</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Maiores fuga provident Libero.</p>
-          </div>
-          <!-- /.col-xl-12 section-header text-centr -->
-          <div class="row">
-            <div class="col-xl-12">
-              <div id="accordion">
-                <div class="card">
-                  <div class="card-header" id="headingOne">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                       Lorem ipsum dolor sit amet, consectetur.
-                      </button>
-                    </h5>
-                  </div>
-
-                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                    <div class="card-body">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus veniam voluptates placeat ipsa excepturi officiis, vitae maxime recusandae impedit nam quis nostrum libero, doloremque explicabo corrupti dicta aliquam numquam ratione magnam illum. Libero beatae consectetur rem numquam!
+            <!-- /.numbers -->
+            
+            <div class="features-blocks">
+                <div class="features-block wow fadeInDown" data-wow-delay="0.1s">
+                    <div class="features-block__img">
+                        <img src="img/features/icon1.png" alt="icon1">
                     </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header" id="headingTwo">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                       Lorem ipsum dolor sit.
-                      </button>
-                    </h5>
-                  </div>
-                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                    <div class="card-body">
-                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque culpa omnis, quasi, unde ex voluptas! Assumenda ullam quod inventore, libero, nulla atque optio voluptatum necessitatibus a ex delectus! Ratione dolores laboriosam provident, neque laudantium, error, deleniti omnis culpa at veritatis fuga reprehenderit optio itaque voluptatem.
+                    <!-- /.features-block__img -->
+                    <div class="features-block__text">
+                        <div class="features-block__title">Производство</div>
+                        <!-- /.features-block__title -->
+                        <div class="features-block__desrc">4 технологические линии способны выполнить любой заказ любой сложности</div>
+                        <!-- /.features-block__desrc -->
                     </div>
-                  </div>
+                    <!-- /.features-block__text -->
                 </div>
-                <div class="card">
-                  <div class="card-header" id="headingThree">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                       Group Item #3
-                      </button>
-                    </h5>
-                  </div>
-                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                    <div class="card-body">
-                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat voluptas autem expedita aliquam voluptatem, veritatis itaque culpa.
+                <!-- /.features-block -->
+               
+                <div class="features-block wow fadeInDown" data-wow-delay="0.2s" >
+                    <div class="features-block__img">
+                         <img src="img/features/icon2.png" alt="icon2">
                     </div>
-                  </div>
+                    <!-- /.features-block__img -->
+                    <div class="features-block__text">
+                        <div class="features-block__title">Бесплатные образцы</div>
+                        <!-- /.features-block__title -->
+                        <div class="features-block__desrc">Бесплатно делаем образцы гофроупаковки - это помогает заранее увидеть упаковку</div>
+                        <!-- /.features-block__desrc -->
+                    </div>
+                    <!-- /.features-block__text -->
                 </div>
-              </div>
+                <!-- /.features-block -->
+               
+                <div class="features-block wow fadeInDown" data-wow-delay="0.3s">
+                    <div class="features-block__img">
+                         <img src="img/features/icon3.png" alt="icon3">
+                    </div>
+                    <!-- /.features-block__img -->
+                    <div class="features-block__text">
+                        <div class="features-block__title">Стабильное качество</div>
+                        <!-- /.features-block__title -->
+                        <div class="features-block__desrc">Собственная лаборатория контролирует качество на каждом этапе производства</div>
+                        <!-- /.features-block__desrc -->
+                    </div>
+                    <!-- /.features-block__text -->
+                </div>
+                <!-- /.features-block -->
+                
+                <div class="features-block wow fadeInDown" data-wow-delay="0.4s">
+                    <div class="features-block__img">
+                         <img src="img/features/icon4.png" alt="icon4">
+                    </div>
+                    <!-- /.features-block__img -->
+                    <div class="features-block__text">
+                        <div class="features-block__title">Страховой запас</div>
+                        <!-- /.features-block__title -->
+                        <div class="features-block__desrc">Можем хранить запас гофропродукции на своих складах и поставлять его партиями</div>
+                        <!-- /.features-block__desrc -->
+                    </div>
+                    <!-- /.features-block__text -->
+                </div>
+                <!-- /.features-block -->
+               
+                <div class="features-block wow fadeInDown" data-wow-delay="0.5s">
+                    <div class="features-block__img">
+                         <img src="img/features/icon5.png" alt="icon5">
+                    </div>
+                    <!-- /.features-block__img -->
+                    <div class="features-block__text">
+                        <div class="features-block__title">Флексопечать</div>
+                        <!-- /.features-block__title -->
+                        <div class="features-block__desrc">Возможно нанесение вашего  логотипа, текста или манипуляционных знаков</div>
+                        <!-- /.features-block__desrc -->
+                    </div>
+                    <!-- /.features-block__text -->
+                </div>
+                <!-- /.features-block -->
+               
+                <div class="features-block wow fadeInDown" data-wow-delay="0.6s">
+                    <div class="features-block__img">
+                         <img src="img/features/icon6.png" alt="icon6">
+                    </div>
+                    <!-- /.features-block__img -->
+                    <div class="features-block__text">
+                        <div class="features-block__title">Гидрофобные добавки</div>
+                        <!-- /.features-block__title -->
+                        <div class="features-block__desrc">На производстве реализована технология, которая позволяет гофрокартону стать прочнее</div>
+                        <!-- /.features-block__desrc -->
+                    </div>
+                    <!-- /.features-block__text -->
+                </div>
+                <!-- /.features-block -->
+            
             </div>
-            <!-- /.col-xl-12 -->
-          </div>
-          <!-- /.row -->
+            <!-- /.features-blocks -->
         </div>
-        <!-- /.row -->
-    </section> 
-
-    <section id="feedback">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-12 section-header text-center">
-            <h2><span>Clients</span> Said</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, nesciunt?</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xl-12">
-            <div class="feedback-slider">
-              <div class="feedback-slider-item text-center">
-                <div class="feedback-box">
-                  <img class="center-block" src="img/feedback/feedback1.jpg" alt="Kita Say">
-                 <div class="feedback-shadow">
-                    <p>“This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again”</p>
-                   <i class="fa fa-star"></i>
-                   <i class="fa fa-star"></i>
-                   <i class="fa fa-star"></i>
-                   <i class="fa fa-star"></i>
-                   <i class="fa fa-star"></i>
-                   <p><span>Kita Say,</span> HK Director</p>
-                 </div>
-                </div>
-              </div>
-              <div class="feedback-slider-item text-center">
-                <div class="feedback-box">
-                  <img class="center-block" src="img/feedback/feedback2.jpg" alt="Kita Say">
-                  <div class="feedback-shadow">
-                    <p>“This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again”</p>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <p><span>Kita Say,</span> HK Director</p>
-                  </div>
-                </div>
-              </div>
-              <div class="feedback-slider-item text-center">
-                <div class="feedback-box">
-                  <img class="center-block" src="img/feedback/feedback1.jpg" alt="Kita Say">
-                  <div class="feedback-shadow">
-                    <p>“This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again”</p>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <p><span>Kita Say,</span> HK Director</p>
-                  </div>
-                </div>
-              </div>
-              <div class="feedback-slider-item text-center">
-                <div class="feedback-box">
-                  <img class="center-block" src="img/feedback/feedback2.jpg" alt="Kita Say">
-                 <div class="feedback-shadow">
-                   <p>“This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again”</p>
-                   <i class="fa fa-star"></i>
-                   <i class="fa fa-star"></i>
-                   <i class="fa fa-star"></i>
-                   <i class="fa fa-star"></i>
-                   <i class="fa fa-star"></i>
-                   <p><span>Kita Say,</span> HK Director</p>
-                 </div>
-                </div>
-              </div>
-              <div class="feedback-slider-item text-center">
-                <div class="feedback-box">
-                  <img class="center-block" src="img/feedback/feedback1.jpg" alt="Kita Say">
-                  <div class="feedback-shadow">
-                    <p>“This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again”</p>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <p><span>Kita Say,</span> HK Director</p>
-                  </div>
-                </div>
-              </div>
-              <div class="feedback-slider-item text-center">
-                <div class="feedback-box">
-                  <img class="center-block" src="img/feedback/feedback2.jpg" alt="Kita Say">
-                 <div class="feedback-shadow">
-                    <p>“This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again”</p>
-                   <i class="fa fa-star"></i>
-                   <i class="fa fa-star"></i>
-                   <i class="fa fa-star"></i>
-                   <i class="fa fa-star"></i>
-                   <i class="fa fa-star"></i>
-                   <p><span>Kita Say,</span> HK Director</p>
-                 </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- /.col-xl-12 -->
-        </div>
-        <!-- /.row -->
-      </div>
+        <!-- /.container -->
     </section>
+    <!-- /.features -->
    
-    <footer id="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center">
-            <a href="#popup-1"><button class="footer-btn">Contact Us</button></a>
-          </div>
+    <section class="products" id="products">
+        <div class="container">
+            <h2 class="section-title">наша Продукция</h2>
+            <!-- /.section-title -->
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6">
+                    <div class="products-block">
+                        <img src="img/products/img-1.png" alt="Гофрокороб">
+                        <div class="products-block__title">Гофрокороб 4-х клапанный</div>
+                        <!-- /.product-block__title -->
+                        <div class="products-block__buttons"><button class="button button-o products-block__button">Подробнее</button><button class="button">Получит расчет</button></div>
+                        <!-- /.products-block__buttons -->
+                    </div>
+                    <!-- /.products-block -->
+                </div>
+                <!-- /.col-6 -->
+                
+                <div class="col-12 col-md-6">
+                    <div class="products-block">
+                        <img src="img/products/img-2.png" alt="Гофролоток">
+                        <div class="products-block__title">Гофролоток</div>
+                        <!-- /.product-block__title -->
+                        <div class="products-block__buttons"><button class="button button-o products-block__button">Подробнее</button><button class="button">Получит расчет</button></div>
+                        <!-- /.products-block__buttons -->
+                    </div>
+                    <!-- /.products-block -->
+                </div>
+                <!-- /.col-6 -->
+            </div>
+            <!-- /.row -->
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6">
+                    <div class="products-block">
+                        <img src="img/products/img-3.png" alt="Гофрокороб самосборный">
+                        <div class="products-block__title">Гофрокороб самосборный (сложная высечка)</div>
+                        <!-- /.product-block__title -->
+                        <div class="products-block__buttons"><button class="button button-o products-block__button">Подробнее</button><button class="button">Получит расчет</button></div>
+                        <!-- /.products-block__buttons -->
+                    </div>
+                    <!-- /.products-block -->
+                </div>
+                <!-- /.col-6 -->
+                <div class="col-12 col-md-6">
+                    <div class="products-block">
+                        <img src="img/products/img-4.png" alt="Листовой гофрокартон">
+                        <div class="products-block__title">Листовой гофрокартон</div>
+                        <!-- /.product-block__title -->
+                        <div class="products-block__buttons"><button class="button button-o products-block__button">Подробнее</button><button class="button">Получит расчет</button></div>
+                        <!-- /.products-block__buttons -->
+                    </div>
+                    <!-- /.products-block -->
+                </div>
+                <!-- /.col-6 -->
+            </div>
+            <!-- /.row -->
         </div>
-      </div>
-    </footer>
+        <!-- /.container -->
+    </section>
+    <!-- /.products -->
+    <section class="offer dark-bg">
+        <div class="container">
+            <h2 class="offer-title">Получите индивидуальное предложение <span>на производство и поставку изделий</span></h2>
+            <!-- /.offer-title -->
+            <div class="offer-form">
+                <form action="#">
+                    <label class="offer-form__label" for="">Введите ваш номер телефона:</label>
+                    <input class="form__input offer-form__input" type="tell" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ"> 
+                    <button class="button offer-form__button" type="submit">Оставить заявку!</button>  <br>
+                    <small class="form-small">*Минимальный заказ 500шт</small>
+                </form>
+            </div>
+            <!-- /.offer-form -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.offer -->
+    <section class="production" id="production">
+        <div class="container">
+            <h2 class="section-title">Наша Работа</h2>
+            <!-- /.section-title -->
+            <div class="production-block">
+                <div class="production-slick">
+                    <div class="product-block__img"><img src="img/slick/5.jpg" alt=""></div>
+                    <div class="product-block__img"><img src="img/slick/6.jpg" alt=""></div>
+                    <div class="product-block__img"><img src="img/slick/7.jpg" alt=""></div>
+                    <div class="product-block__img"><img src="img/slick/slick1.png" alt=""></div>      
+                </div>
+                <!-- /.production-slick -->
+               
+                <div class="production-desrc">
+                    <h2 class="production-title">Производство</h2>
+                    <!-- /.production-title -->
+                    <div class="production-subtitle">Современное оборудование позволяет произ- водить до 5 миллионов квадратных метров гофрокартона ежемесячно. Гофрокороба и лотки производятся по ГОСТу или чертежам заказчика.
+                        Досконально прорабатываем конструкции коро- бов и составы сырья, учитывая условия хранения, транспортировки и производства вашей продукции.
+                                Возможно нанесение цветной флексопечати на поверхность коробов.
+                    </div>
+                    <!-- /.production-subtitle -->
+                </div>
+                <!-- /.production-desrc -->
+            </div>
+            <!-- /.production-block -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.production -->
+    <section class="clients" id="clients">
+        <div class="container">
+            <h2 class="section-title">Наши клиенты</h2>
+            <!-- /.section-header -->
+            <div class="clients-blocks">
+                <div class="clients-block  wow fadeInDown" data-wow-delay="0.1s" data-wow-duration="1s"><img src="img/clients/clients1.png" alt="Клиент №1" class="clients-block__img"></div>
+                <!-- /.clients-block -->
+              
+                <div class="clients-block  wow fadeInDown" data-wow-delay="0.2s" data-wow-duration="1s"><img src="img/clients/clients2.png" alt="Клиент №2" class="clients-block__img"></div>
+                <!-- /.clients-block -->
+               
+                <div class="clients-block  wow fadeInDown" data-wow-delay="0.3s" data-wow-duration="1s"><img src="img/clients/clients4.png" alt="Клиент №3" class="clients-block__img"></div>
+                <!-- /.clients-block -->
+                
+                <div class="clients-block  wow fadeInDown" data-wow-delay="0.4s" data-wow-duration="1s"><img src="img/clients/clients5.png" alt="Клиент №4" class="clients-block__img"></div>
+                <!-- /.clients-block -->
+               
+                <div class="clients-block  wow fadeInDown" data-wow-delay="0.5s" data-wow-duration="1s"><img src="img/clients/clients6.png" alt="Клиент №5" class="clients-block__img"></div>
+                <!-- /.clients-block -->
+                
+                <div class="clients-block  wow fadeInDown" data-wow-delay="0.6s" data-wow-duration="1s"><img src="img/clients/clients7.png" alt="Клиент №6" class="clients-block__img"></div>
+                <!-- /.clients-block -->
+               
+                <div class="clients-block  wow fadeInDown" data-wow-delay="0.7s" data-wow-duration="1s"><img src="img/clients/clients3.png" alt="Клиент №7" class="clients-block__img"></div>
+                <!-- /.clients-block -->
+                
+                <div class="clients-block  wow fadeInDown" data-wow-delay="0.8s" data-wow-duration="1s"><img src="img/clients/clients8.png" alt="Клиент №8" class="clients-block__img"></div>
+                <!-- /.clients-block -->
+                
+                <div class="clients-block  wow fadeInDown" data-wow-delay="0.9s" data-wow-duration="1s"><img src="img/clients/clients9.png" alt="Клиент №9" class="clients-block__img"></div>
+                <!-- /.clients-block -->
+               
+                <div class="clients-block  wow fadeInDown" data-wow-delay="1s" data-wow-duration="1s"><img src="img/clients11.png" alt="Клиент №10" class="clients-block__img"></div>
+                <!-- /.clients-block -->
+               
+                <div class="clients-block  wow fadeInDown" data-wow-delay="1.1s" data-wow-duration="1s"><img src="img/clients/clients10.png" alt="Клиент №11" class="clients-block__img"></div>
+                <!-- /.clients-block -->
+              
+                <div class="clients-block  wow fadeInDown" data-wow-delay="1.2s" data-wow-duration="1s"><img src="img/clients/clients12.png" alt="Клиент №12" class="clients-block__img"></div>
+                <!-- /.clients-block -->
+            </div>
+            <!-- /.clients-blocks -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.clients -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <h2 class="section-title">Отзывы о сотрудничестве</h2>
+            <!-- /.section-title -->
+            <div class="reviews-blocks">
+                
+                <div class="reviews-block"><img src="img/slick/reviews1.jpg" alt="Отзыв1" class="rewiews-block__img"></div>
+                <!-- /.reviews-block -->
+                
+                <div class="reviews-block"><img src="img/slick/reviews2.jpg" alt="Отзыв 2" class="rewiews-block__img"></div>
+                <!-- /.reviews-block -->
+                
+                <div class="reviews-block"><img src="img/slick/reviews3.jpg" alt="Отзыв 3" class="rewiews-block__img"></div>
+                <!-- /.reviews-block -->
+            </div>
+            <!-- /.reviews-blocks -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.reviews -->
 
-    <div id="popup-1" class="popup-overlay">
-      <div class="popup">
-        <a href="#close" class="popup-close">&times;</a>
-        <p><span>&#9742;</span> +7-953-417-90-65</p>
+
+    <div class="overlay">
+        <div class="popup">
+            <div class="popup-title">Форма обратной связи</div>
+            <!-- /.popup-title -->
+            <div class="popup-close"> &times;</div>
+            <!-- /.popup-close -->
+            <div class="popup-form">
+                <form action="#" class="main-form">
+                    <div class="popup-form-header">Получите индивидуальное предложение <span>на производство и поставку изделий</span>
+                    <label for="phone" class="popup-form__label">Введите ваш номер телефона:</label>
+                    <div class="popup-form__wrap">
+                        <input type="tel" placeholder="Введите Телефон" class="popup-form__input" name="phone" required>
+                        <buttton class="button button_big popup-form__btn">Оставить Заявку
+                        </buttton>
+                    </div>
+                    <!-- /.button popup-form__btn -->
+                    <div class="popup-form__small">*Минимальный заказ 500шт</div>
+                    </div>
+                    <!-- /.popup-form-header -->
+                </form>
+                <!-- /.main-form -->
+            </div>
+            <!-- /.popup-form -->
+        </div>
+        <!-- /.popup -->
     </div>
-  </div>
-
-    <div id="popup-2" class="popup-overlay">
-      <div class="popup">
-        <a href="#close" class="popup-close">&times;</a>
-        <form action="#">
-          <input type="text" placeholder="Name">
-        </form>
-        <button class="popup-btn">Send</button>
-      </div>
-    </div>
-
-      <!-- Модальное окно -->
-      <div class="modal fade" id="modal-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Work#1</h5>
-          </div>
-                <div class="modal-body">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quaerat itaque, adipisci quod iste nostrum tenetur, vitae ducimus velit. Fugiat suscipit, deserunt voluptas expedita consectetur ex fuga a, maxime repellendus dolores totam blanditiis hic natus soluta, quibusdam! Eos voluptatem, ex.
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
-                </div>
-            </div>
-          </div>
-      </div>
-
-      <div class="modal fade" id="modal-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Work#2</h5>
-          </div>
-                <div class="modal-body">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quaerat itaque, adipisci quod iste nostrum tenetur, vitae ducimus velit. Fugiat suscipit, deserunt voluptas expedita consectetur ex fuga a, maxime repellendus dolores totam blanditiis hic natus soluta, quibusdam! Eos voluptatem, ex.
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
-                </div>
-            </div>
-          </div>
-      </div>
-
-      <div class="modal fade" id="modal-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Work#3</h5>
-          </div>
-                <div class="modal-body">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quaerat itaque, adipisci quod iste nostrum tenetur, vitae ducimus velit. Fugiat suscipit, deserunt voluptas expedita consectetur ex fuga a, maxime repellendus dolores totam blanditiis hic natus soluta, quibusdam! Eos voluptatem, ex.
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
-                </div>
-            </div>
-          </div>
-      </div>
-
-      <div class="modal fade" id="modal-4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Work#4</h5>
-          </div>
-                <div class="modal-body">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quaerat itaque, adipisci quod iste nostrum tenetur, vitae ducimus velit. Fugiat suscipit, deserunt voluptas expedita consectetur ex fuga a, maxime repellendus dolores totam blanditiis hic natus soluta, quibusdam! Eos voluptatem, ex.
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
-                </div>
-            </div>
-          </div>
-      </div>
-
-      <div class="modal fade" id="modal-5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Work#5</h5>
-          </div>
-                <div class="modal-body">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quaerat itaque, adipisci quod iste nostrum tenetur, vitae ducimus velit. Fugiat suscipit, deserunt voluptas expedita consectetur ex fuga a, maxime repellendus dolores totam blanditiis hic natus soluta, quibusdam! Eos voluptatem, ex.
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
-                </div>
-            </div>
-          </div>
-      </div>
-
-      <div class="modal fade" id="modal-6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Work#6</h5>
-          </div>
-                <div class="modal-body">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quaerat itaque, adipisci quod iste nostrum tenetur, vitae ducimus velit. Fugiat suscipit, deserunt voluptas expedita consectetur ex fuga a, maxime repellendus dolores totam blanditiis hic natus soluta, quibusdam! Eos voluptatem, ex.
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
-                </div>
-            </div>
-          </div>
-      </div>
-      <div class="modal fade" id="modal-7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Work#7</h5>
-          </div>
-                <div class="modal-body">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quaerat itaque, adipisci quod iste nostrum tenetur, vitae ducimus velit. Fugiat suscipit, deserunt voluptas expedita consectetur ex fuga a, maxime repellendus dolores totam blanditiis hic natus soluta, quibusdam! Eos voluptatem, ex.
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
-                </div>
-            </div>
-          </div>
-      </div>
-      <div class="modal fade" id="modal-8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Work#8</h5>
-          </div>
-                <div class="modal-body">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quaerat itaque, adipisci quod iste nostrum tenetur, vitae ducimus velit. Fugiat suscipit, deserunt voluptas expedita consectetur ex fuga a, maxime repellendus dolores totam blanditiis hic natus soluta, quibusdam! Eos voluptatem, ex.
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
-                </div>
-            </div>
-          </div>
-      </div>
-      <div class="modal fade" id="modal-9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Work#9</h5>
-          </div>
-                <div class="modal-body">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quaerat itaque, adipisci quod iste nostrum tenetur, vitae ducimus velit. Fugiat suscipit, deserunt voluptas expedita consectetur ex fuga a, maxime repellendus dolores totam blanditiis hic natus soluta, quibusdam! Eos voluptatem, ex.
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
-                </div>
-            </div>
-          </div>
-      </div>
-
-   <div class="cd-modal" data-modal="modal-trigger">
-    <div class="cd-svg-bg" 
-    data-step1="M-59.9,540.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L864.8-41c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L-59.5,540.6 C-59.6,540.7-59.8,540.7-59.9,540.5z" 
-    data-step2="M33.8,690l-188.2-300.3c-0.1-0.1,0-0.3,0.1-0.3l925.4-579.8c0.1-0.1,0.3,0,0.3,0.1L959.6,110c0.1,0.1,0,0.3-0.1,0.3 L34.1,690.1C34,690.2,33.9,690.1,33.8,690z" 
-    data-step3="M-465.1,287.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L459.5-294c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-464.9,287.7-465,287.7-465.1,287.5z" 
-    data-step4="M-329.3,504.3l-272.5-435c-0.1-0.1,0-0.3,0.1-0.3l925.4-579.8c0.1-0.1,0.3,0,0.3,0.1l272.5,435c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-329,504.5-329.2,504.5-329.3,504.3z" 
-    data-step5="M341.1,797.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L1265.8,216c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L341.5,797.6 C341.4,797.7,341.2,797.7,341.1,797.5z" 
-    data-step6="M476.4,1013.4L205,580.3c-0.1-0.1,0-0.3,0.1-0.3L1130.5,0.2c0.1-0.1,0.3,0,0.3,0.1l271.4,433.1c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C476.6,1013.6,476.5,1013.5,476.4,1013.4z">
-      <svg height="100%" width="100%" preserveAspectRatio="none" viewBox="0 0 800 500">
-        <title>SVG Modal background</title>
-        <path id="cd-changing-path-1" d="M-59.9,540.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L864.8-41c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L-59.5,540.6 C-59.6,540.7-59.8,540.7-59.9,540.5z"/>
-        <path id="cd-changing-path-2" d="M-465.1,287.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L459.5-294c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-464.9,287.7-465,287.7-465.1,287.5z"/>
-        <path id="cd-changing-path-3" d="M341.1,797.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L1265.8,216c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L341.5,797.6 C341.4,797.7,341.2,797.7,341.1,797.5z"/>
-      </svg>
-    </div>
-
-    <div class="cd-modal-content">
-      <p>
-        Koc Koi Tomi
-          Lorem ipsum is dummy lorem very dumy
-      </p>
-    </div> <!-- cd-modal-content -->
-
-    <a href="#0" class="modal-close">Close</a>
-  </div> <!-- cd-modal -->
-  <div class="cd-cover-layer"></div> <!-- .cd-cover-layer -->
-
-
+    <!-- /.overlay -->
+	
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    
- <script src="js/wow.min.js"></script>
-  <script>
-  new WOW().init();
- </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="slick/slick.min.js"> </script>
-    <script src="js/snap.svg-min.js"></script>
-    <script src="js/main.js"></script> <!-- Resource jQuery -->
-    
-    <script>
-      $(document).ready(function(){
-        $('.feedback-slider').slick({
-          infinite: true,
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          arrows: true,
-          prevArrow: '<i class="fa feedback-slider-arrows arrow-left fa-chevron-left"></i>',
-          nextArrow: '<i class="fa feedback-slider-arrows arrow-right fa-chevron-right"></i>',
-          dots: true,
-          responsive: [
-            {
-              breakpoint: 1024,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                infinite: true,
-                dots: true
-              }
-            },
-            {
-              breakpoint: 600,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-              }
-            },
-            {
-              breakpoint: 480,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-              }
-            }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
-          ]
+            
+            <script>
+                 
+                 jQuery(document).ready(function($){
+                  $('.production-slick').slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                  });
+                 });    
+                    
+            </script>
+
+
+        <script>   
+        $(document).ready(function(){
+            $('.header-contacts__button').on("click", function(){
+                $('.overlay').show();
+            });
+            $('.popup-close').on("click", function(){
+                $('.overlay').hide();
+            });
 
         });
-     });
-  
+
+        </script>
+
+    <script src="slick/slick.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script>
+        new WOW().init();
     </script>
 
   </body>
-</html>
+</html>.

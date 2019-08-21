@@ -1,0 +1,54 @@
+.header 
+	background-color: #fff
+	padding-top: 65px
+	padding-bottom: 15px
+	&__logo
+		background: url(../img/logo.png)
+		background-size: 100%
+		width: 191px
+		height: 61px
+	&-contacts
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: flex-end
+		align-items: center
+		&__phone
+			&s
+				display: flex
+			font-size: 22px
+			font-weight: 700
+			margin-right: 13px
+			&:first-child
+				border-right: 1px solid #cfcfd0
+				padding-right: 13px
+	&-nav
+		background-color: #373737
+		position: fixed
+		top: 0
+		left: 0
+		width: 100%
+		z-index: 100
+		&-menu
+			&__list
+				display: flex
+				justify-content: space-between
+			li
+			 display: inline 
+			 font-size: 12px
+			 padding-top: 15px
+			 font-weight: 400
+			 line-height: 22px
+			 text-transform: uppercase
+			 a
+			 	text-decoration: none
+			 	color: #fff
+			 	&:hover
+			 		color: #f39003
+			 &::before
+			 	content: ''
+			 	position: absolute
+			 	color: #fff
+			 	opacity: 0.2
